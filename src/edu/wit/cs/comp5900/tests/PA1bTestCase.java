@@ -4,7 +4,7 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import edu.wit.cs.comp5900.PA1a;
+import edu.wit.cs.comp5900.PA1b;
 import junit.framework.TestCase;
 
 public class PA1bTestCase extends TestCase {
@@ -41,7 +41,7 @@ public class PA1bTestCase extends TestCase {
 		System.setOut(new PrintStream(outContent));
 		
 		try {
-			PA1a.main(new String[] { "foo" });
+			PA1b.main(new String[] { "foo" });
 		} catch (ExitException e) {}
 		assertEquals(output, outContent.toString());
 		
